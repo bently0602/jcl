@@ -1,0 +1,17 @@
+//HERC01 JOB 'HERC01',
+// CLASS=A,
+// MSGCLASS=H,
+// MSGLEVEL=(1,1),
+// NOTIFY=HERC01,
+// USER=HERC01,
+// PASSWORD=CUL8TR
+//*
+//* TK4 requires the UNIT and VOL
+//*
+//STEP01 EXEC PGM=IEFBR14
+//STEP02 DD   DSN=HERC01.TEST.PSTEST,
+//            UNIT=3350,VOL=SER=PUB000,
+//            DISP=(NEW,CATLG,DELETE),
+//            DCB=(LRECL=80,BLKSIZE=8000,RECFM=FB),
+//            SPACE=(TRK,(2,3))
+//
